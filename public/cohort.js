@@ -21,7 +21,8 @@ VisTypesRegistryProvider.register(function CohortProvider(Private) {
     category: CATEGORY.OTHER,
     visConfig: {
       defaults: {
-        mapColors: ''
+        mapColors: '',
+        hiddenColumns: ''
       },
       template: template,
     },
@@ -53,7 +54,7 @@ VisTypesRegistryProvider.register(function CohortProvider(Private) {
           title: 'Cohort Period',
           min: 1,
           max: 1,
-          aggFilter: 'histogram'
+          aggFilter: ['date_histogram', 'histogram']
         }
       ])
     }

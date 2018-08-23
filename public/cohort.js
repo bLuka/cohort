@@ -37,7 +37,6 @@ VisTypesRegistryProvider.register(function CohortProvider(Private) {
           title: 'Total',
           max: 1,
           min: 1,
-          aggFilter: ['count', 'sum', 'avg'],
           defaults: [
             {type: 'count', schema: 'metric'}
           ]
